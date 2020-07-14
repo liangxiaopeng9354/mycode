@@ -1,0 +1,53 @@
+package com.zjmy.moor.gongyong;
+
+import java.io.RandomAccessFile;
+import java.util.ArrayList;
+import java.util.List;
+ 
+
+public class demo {
+ 
+    List<String> list = new ArrayList<String>();
+ 
+   
+    public int getRandomNumber(int total) {
+        return (int) (Math.random() * total);
+    }
+ 
+    public void initList(String fileName) {
+        try {
+            RandomAccessFile accessFile = new RandomAccessFile(fileName, "r");
+ 
+            String str = "";
+ 
+            while (null != (str = accessFile.readLine())) {
+                list.add(str);
+            }
+ 
+            accessFile.close();
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+    }
+ 
+    public String getStringOfFile() {
+ 
+        if (null != list) {
+            int line = getRandomNumber(list.size());
+ 
+            return list.get(line);
+        }
+        return null;
+ 
+    }
+ 
+    public static void main(String[] args) {
+ 
+    	demo rl = new demo();
+        rl.initList("D:/system/test.txt");
+        System.out.println(rl.getStringOfFile());
+ 
+    }
+ 
+}

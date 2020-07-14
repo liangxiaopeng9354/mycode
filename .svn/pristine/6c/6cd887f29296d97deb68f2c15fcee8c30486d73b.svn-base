@@ -1,0 +1,116 @@
+package com.zjmy.moor.center;
+
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+import com.zjmy.moor.gongyong.SelectNameSuiji;
+
+public class TestZhitonggongju {
+  private WebDriver driver;
+  private String baseUrl;
+  private boolean acceptNextAlert = true;
+  private StringBuffer verificationErrors = new StringBuffer();
+
+  @Before
+  public void setUp() throws Exception {
+	driver = new FirefoxDriver();
+    baseUrl = "https://edu.bjzjmy.com:5656/index#/";
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	driver.manage().window().maximize();
+	//driver.manage().window().setSize(new Dimension(2080,1050));
+  }
+
+  @Test
+  public void test1() throws Exception {
+	//登录
+	driver.get(baseUrl + "/index");
+	driver.findElement(By.id("loginBtn")).click();
+	driver.findElement(By.id("username")).clear();
+	driver.findElement(By.id("username")).sendKeys("310107200107203414");
+	driver.findElement(By.id("password")).clear();
+	driver.findElement(By.id("password")).sendKeys("203414");
+	driver.findElement(By.xpath(".//*[@id='lable']")).click();
+	//获取滑动按钮开始的位置
+	WebElement begin = driver.findElement(By.xpath(".//*[@id='lable']"));
+	//获取滑动按钮结束的位置
+	//WebElement end = driver.findElement(By.xpath("html/body/div[1]"));
+	//new Actions(driver).dragAndDrop(begin, end).perform();
+	new Actions(driver).dragAndDropBy(begin, 215, 0).perform();
+	driver.findElement(By.id("btn_submit")).click();
+
+	//关闭直通工具
+	driver.findElement(By.xpath(".//*[@id='mfb-menu-nav']/li/a/i[2]")).click();
+	Thread.sleep(1000);
+	//打开直通工具
+	driver.findElement(By.xpath(".//*[@id='mfb-menu-nav']/li/a/i[2]")).click();
+	Thread.sleep(1000);
+	//点击快去开展新课题吧
+	driver.findElement(By.xpath(".//*[@id='mfb-menu-nav']/li/ul/li[1]/a/i")).click();
+	Thread.sleep(1000);
+	//点击新建灵感
+	driver.findElement(By.xpath(".//*[@id='mfb-menu-nav']/li/ul/li[2]/a/i")).click();
+	Thread.sleep(1000);
+	//点击找资料
+	driver.findElement(By.xpath(".//*[@id='mfb-menu-nav']/li/ul/li[3]/a/i")).click();
+	Thread.sleep(1000);
+	
+	//退出
+  	Actions builder2 = new Actions(driver);
+  	builder2.moveToElement(driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a"))).perform();  
+  	Thread.sleep(1000);
+  	driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a/ul/li[3]")).click();
+  	Thread.sleep(1000);
+  	driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+  	Thread.sleep(1000);
+  	System.out.println(this.getClass().getName()+"用例已经完成！！！");
+  }
+
+  @After
+  public void tearDown() throws Exception {
+    driver.quit();
+    String verificationErrorString = verificationErrors.toString();
+    if (!"".equals(verificationErrorString)) {
+      fail(verificationErrorString);
+    }
+  }
+
+  private boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+
+  private boolean isAlertPresent() {
+    try {
+      driver.switchTo().alert();
+      return true;
+    } catch (NoAlertPresentException e) {
+      return false;
+    }
+  }
+
+  private String closeAlertAndGetItsText() {
+    try {
+      Alert alert = driver.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
+      }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
+    }
+  }
+}

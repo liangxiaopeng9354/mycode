@@ -1,0 +1,235 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: com.zjmy.moor.yanketang.TestYanketang</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['com.zjmy.moor.yanketang.TestYanketang'] = new Array();
+    
+        cur['ant.core.lib'] = 'D:\\system\\apache-ant-1.8.2\\lib\\ant.jar';
+    
+        cur['ant.file'] = 'D:\\system\\project\\selenium-moor\\moor\\build.xml';
+    
+        cur['ant.file.TestJunit'] = 'D:\\system\\project\\selenium-moor\\moor\\build.xml';
+    
+        cur['ant.file.type'] = 'file';
+    
+        cur['ant.file.type.TestJunit'] = 'file';
+    
+        cur['ant.home'] = 'D:\\system\\apache-ant-1.8.2';
+    
+        cur['ant.java.version'] = '1.7';
+    
+        cur['ant.library.dir'] = 'D:\\system\\apache-ant-1.8.2\\lib';
+    
+        cur['ant.project.default-target'] = 'junit';
+    
+        cur['ant.project.invoked-targets'] = 'junit';
+    
+        cur['ant.project.name'] = 'TestJunit';
+    
+        cur['ant.version'] = 'Apache Ant(TM) version 1.8.2 compiled on December 20 2010';
+    
+        cur['awt.toolkit'] = 'sun.awt.windows.WToolkit';
+    
+        cur['basedir'] = 'D:\\system\\project\\selenium-moor\\moor';
+    
+        cur['build.dir'] = 'classes';
+    
+        cur['file.encoding'] = 'GBK';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.Win32GraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'sun.awt.windows.WPrinterJob';
+    
+        cur['java.class.path'] = 'D:\\system\\project\\selenium-moor\\moor\\lib\\apache-mime4j-0.6.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\bsh-2.0b4.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\cglib-nodep-2.1_3.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\commons-codec-1.10.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\commons-exec-1.3.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\commons-io-2.4.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\commons-logging-1.2.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\gson-2.3.1.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\guava-19.0.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\hamcrest-core-1.3.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\hamcrest-library-1.3.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\httpclient-4.5.1.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\httpcore-4.4.3.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\httpmime-4.5.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\jcommander-1.48.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\jna-4.1.0.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\jna-platform-4.1.0.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\junit-4.12.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\netty-3.5.7.Final.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\phantomjsdriver-1.2.1.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\selenium-java-2.53.0.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\selenium-java-2.53.0-srcs.jar;D:\\system\\project\\selenium-moor\\moor\\lib\\testng-6.9.9.jar;D:\\system\\project\\selenium-moor\\moor\\classes;D:\\system\\project\\selenium-moor\\moor;E:\\system\\Java\\jdk1.8.0_45\\lib\\dt.jar;E:\\system\\Java\\jdk1.8.0_45\\lib\\tools.jar;D:\\system\\apache-ant-1.8.2\\lib\\junit-4.12.jar;D:\\system\\apache-ant-1.8.2\\lib\\ant-launcher.jar;D:\\system\\apache-ant-1.8.2\\lib\\ant.jar;D:\\system\\apache-ant-1.8.2\\lib\\ant-junit.jar;D:\\system\\apache-ant-1.8.2\\lib\\ant-junit4.jar';
+    
+        cur['java.class.version'] = '52.0';
+    
+        cur['java.endorsed.dirs'] = 'E:\\system\\Java\\jdk1.8.0_45\\jre\\lib\\endorsed';
+    
+        cur['java.ext.dirs'] = 'E:\\system\\Java\\jdk1.8.0_45\\jre\\lib\\ext;C:\\Windows\\Sun\\Java\\lib\\ext';
+    
+        cur['java.home'] = 'E:\\system\\Java\\jdk1.8.0_45\\jre';
+    
+        cur['java.io.tmpdir'] = 'C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\';
+    
+        cur['java.library.path'] = 'E:\\system\\Java\\jdk1.8.0_45\\jre\\bin;C:\\Windows\\Sun\\Java\\bin;C:\\Windows\\system32;C:\\Windows;D:\\system\\apache-maven-3.2.3\\bin;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36\\Scripts;D:\\android-sdk-windows\\tools;D:\\android-sdk-windows\\platform-tools;D:\\android-sdk-windows\\platforms;D:\\android-sdk-windows\\build-tools;E:\\system\\Java\\jdk1.8.0_45\\bin;E:\\system\\Java\\jdk1.8.0_45\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;D:\\android-sdk-windows\\tools;C:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36;D:\\system\\apache-maven-3.2.3\\bin;D:\\system\\apache-ant-1.8.2\\bin;D:\\system\\apache-maven-3.2.3\\bin;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36\\Scripts;D:\\android-sdk-windows\\tools;D:\\android-sdk-windows\\platform-tools;D:\\android-sdk-windows\\platforms;D:\\android-sdk-windows\\build-tools;E:\\system\\Java\\jdk1.8.0_45\\bin;E:\\system\\Java\\jdk1.8.0_45\\jre\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python36;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Local\\Programs\\Fiddler;.;;.;;.;;.';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.8.0_45-b15';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '1.8';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'http://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://bugreport.sun.com/bugreport/';
+    
+        cur['java.version'] = '1.8.0_45';
+    
+        cur['java.vm.info'] = 'mixed mode';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '1.8';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '25.45-b02';
+    
+        cur['lib.dir'] = 'lib';
+    
+        cur['line.separator'] = '
+';
+    
+        cur['os.arch'] = 'amd64';
+    
+        cur['os.name'] = 'Windows 7';
+    
+        cur['os.version'] = '6.1';
+    
+        cur['path.separator'] = ';';
+    
+        cur['report.dir'] = 'report';
+    
+        cur['report.html'] = 'report/html';
+    
+        cur['report.xml'] = 'report/xml';
+    
+        cur['src.dir'] = 'src';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.class.path'] = 'E:\\system\\Java\\jdk1.8.0_45\\jre\\lib\\resources.jar;E:\\system\\Java\\jdk1.8.0_45\\jre\\lib\\rt.jar;E:\\system\\Java\\jdk1.8.0_45\\jre\\lib\\sunrsasign.jar;E:\\system\\Java\\jdk1.8.0_45\\jre\\lib\\jsse.jar;E:\\system\\Java\\jdk1.8.0_45\\jre\\lib\\jce.jar;E:\\system\\Java\\jdk1.8.0_45\\jre\\lib\\charsets.jar;E:\\system\\Java\\jdk1.8.0_45\\jre\\lib\\jfr.jar;E:\\system\\Java\\jdk1.8.0_45\\jre\\classes';
+    
+        cur['sun.boot.library.path'] = 'E:\\system\\Java\\jdk1.8.0_45\\jre\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'amd64';
+    
+        cur['sun.desktop'] = 'windows';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=D:\\system\\project\\selenium-moor\\moor\\junittestcases5076309043462066000.properties filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\\system\\project\\selenium-moor\\moor\\report\\xml\\IGNORETHIS.xml crashfile=D:\\system\\project\\selenium-moor\\moor\\junitvmwatcher5907794024047922381.properties propsfile=D:\\system\\project\\selenium-moor\\moor\\junit873446849724385930.properties';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'GBK';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = 'Service Pack 1';
+    
+        cur['sun.stderr.encoding'] = 'ms936';
+    
+        cur['sun.stdout.encoding'] = 'ms936';
+    
+        cur['test.dir'] = 'test';
+    
+        cur['user.country'] = 'CN';
+    
+        cur['user.dir'] = 'D:\\system\\project\\selenium-moor\\moor';
+    
+        cur['user.home'] = 'C:\\Users\\Administrator';
+    
+        cur['user.language'] = 'zh';
+    
+        cur['user.name'] = 'Administrator';
+    
+        cur['user.script'] = '';
+    
+        cur['user.timezone'] = 'Asia/Shanghai';
+    
+        cur['user.variant'] = '';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class com.zjmy.moor.yanketang.TestYanketang</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Error">
+<td><a title="Display all tests" href="15_TestYanketang.html">TestYanketang</a></td><td><a title="Display all tests" href="15_TestYanketang.html">1</a></td><td><a title="Display only errors" href="15_TestYanketang-errors.html">1</a></td><td>0</td><td>20.723</td><td>2017-10-23T06:24:01</td><td>XJX2NQLANPAMSCN</td>
+</tr>
+</table>
+<h2>Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="Error">
+<td><a name="test1233"></a>test1233</td><td>Error</td><td>Element is not clickable at point (611.36669921875, 87). Other element would receive the click: &lt;div style="" class="btn-group justified web-app-title ng-scope" ng-if="uProfile.authorities[0] == 'ROLE_Student'"&gt;&lt;/div&gt;
+Command duration or timeout: 68 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'XJX2NQLANPAMSCN', ip: '192.168.20.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4bcc6297-65f8-4dfe-aab9-5d63279fdb86<br>
+<br>
+<code>org.openqa.selenium.WebDriverException: Element is not clickable at point (611.36669921875, 87). Other element would receive the click: &lt;div style="" class="btn-group justified web-app-title ng-scope" ng-if="uProfile.authorities[0] == 'ROLE_Student'"&gt;&lt;/div&gt;<br>Command duration or timeout: 68 milliseconds<br>Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'<br>System info: host: 'XJX2NQLANPAMSCN', ip: '192.168.20.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'<br>Driver info: org.openqa.selenium.firefox.FirefoxDriver<br>Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br>Session ID: 4bcc6297-65f8-4dfe-aab9-5d63279fdb86<br>	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)<br>	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br>	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br>	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)<br>	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)<br>	at com.zjmy.moor.yanketang.TestYanketang.test1233(Unknown Source)<br>
+</code></td><td>20.720</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('com.zjmy.moor.yanketang.TestYanketang');">
+                    Properties &raquo;
+                </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+INSTUPcom.zjmy.sxreader.student.createShuP
+C:\Users\14358\eclipse-workspace\sxreader_selenium\com\zjmy\sxreader\student\createShuP.py
+INFOS:&&1|1|2|0|3|18|7&&2|4|2|1|3|19|9&&3|5|2|6|3|20|9&&3|7|2|6|3|24|9&&3|8|2|6|3|28|9&&3|9|2|6|3|29|9&&2|10|2|1|3|32|9&&2|11|2|1|3|100|9&&2|12|2|1|3|105|9&&2|13|2|1|3|110|9&&2|14|2|1|3|121|9
+sxreader_com.setUp=6
+accept_next_alert=9
+base_url=7
+close_alert_and_get_its_text=13
+sxreader_com=1
+verificationErrors=8
+com.zjmy.sxreader.student.createShuP=2
+tearDown=14
+is_alert_present=12
+test_1=10
+driver=5
+setUp=4
+C:\Users\14358\eclipse-workspace\sxreader_selenium\com\zjmy\sxreader\student\createShuP.py=3
+is_element_present=11

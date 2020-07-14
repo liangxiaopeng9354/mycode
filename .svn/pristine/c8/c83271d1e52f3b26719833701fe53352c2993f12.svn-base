@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="1" failures="0" finished="true" name="Test Run: 20" tests="1" total_time="Finished in: 32.67 secs."/>
+<test location="C:\Users\14358\eclipse-workspace\sxreader_selenium\com\zjmy\sxreader\teacher\readWrite.py" status="error" test="ReadWrite.test_read_write" time="">
+<stdout><![CDATA[0
+ftex0401 login is successful
+934
+Write&#35835;&#20889;&#20219;&#21153;934
+]]></stdout>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "C:\Users\14358\eclipse-workspace\sxreader_selenium\com\zjmy\sxreader\teacher\readWrite.py", line 92, in test_read_write
+    driver.find_element_by_xpath(".//*[@id='app-body']/div[1]/div/div[2]/div[2]/a[2]/img").click()
+  File "C:\Users\14358\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\14358\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\14358\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\14358\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: Element <img lazy-src="http://192.168.10.166:9006/rest/upload/onlineshow/20190710/d31af580bdc047fcb5716ab466a6f846/d31af580bdc047fcb5716ab466a6f846_base64Name.jpg" animate-visible="true" animate-speed="0.5s" alt="" class="ng-isolate-scope" src="http://192.168.10.166:9006/rest/upload/onlineshow/20190710/d31af580bdc047fcb5716ab466a6f846/d31af580bdc047fcb5716ab466a6f846_base64Name.jpg" style="opacity: 1; transition: opacity 0.5s;"> is not clickable at point (1341, 33). Other element would receive the click: <div class="sweet-overlay" tabindex="-1" style="opacity: 1.03; display: block;"></div>
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.17134 x86_64)
+
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="sxreader_selenium readWrite.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

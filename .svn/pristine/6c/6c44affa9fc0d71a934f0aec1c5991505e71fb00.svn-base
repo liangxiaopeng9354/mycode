@@ -1,0 +1,11 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Output from TestSeeProject</title>
+</head>
+<body>
+<pre>1
+com.zjmy.moor.laboratory.project.TestSeeProject用例已经完成！！！
+</pre>
+</body>
+</html>

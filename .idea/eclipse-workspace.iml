@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium/com/zjmy/util" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium/com/zjmy/sxreader" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium/com/zjmy/page" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium/com/zjmy/handle" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium/com/zjmy/config" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium/com/zjmy/case" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium/com/zjmy/business" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium/com/zjmy/base" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium/com/zjmy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium/com/zjmy/report" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium_keys/com/zjmy/sxreader" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium_keys/com/zjmy/page" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium_keys/com/zjmy/keyword" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium_keys/com/zjmy/handle" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium_keys/com/zjmy/business" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium_keys/com/zjmy/base" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium_keys/com/zjmy/case" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium_keys/com/zjmy/config" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium_keys/com/zjmy/keywords" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium_keys/com/zjmy/report" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sxreader_appium_keys/com/zjmy/util" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PackageRequirementsSettings">
+    <option name="requirementsPath" value="" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="pytest" />
+  </component>
+</module>

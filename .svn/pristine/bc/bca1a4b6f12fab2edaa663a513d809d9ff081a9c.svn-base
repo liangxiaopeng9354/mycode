@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="XJX2NQLANPAMSCN" name="laboratory.yourProject.openReport" tests="1" time="0.0" timestamp="2017-08-24T08:20:09">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="lib.dir" value="lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="run.srcpath" value="src" />
+    <property name="os.name" value="Windows 7" />
+    <property name="sun.boot.class.path" value="E:\system\Java\jdk1.8.0_45\jre\lib\resources.jar;E:\system\Java\jdk1.8.0_45\jre\lib\rt.jar;E:\system\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;E:\system\Java\jdk1.8.0_45\jre\lib\jsse.jar;E:\system\Java\jdk1.8.0_45\jre\lib\jce.jar;E:\system\Java\jdk1.8.0_45\jre\lib\charsets.jar;E:\system\Java\jdk1.8.0_45\jre\lib\jfr.jar;E:\system\Java\jdk1.8.0_45\jre\classes" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="D:\system\apache-ant-1.8.2" />
+    <property name="java.runtime.version" value="1.8.0_45-b15" />
+    <property name="run.classpath" value="bin" />
+    <property name="test.report" value="report" />
+    <property name="user.name" value="Administrator" />
+    <property name="user.language" value="zh" />
+    <property name="sun.boot.library.path" value="E:\system\Java\jdk1.8.0_45\jre\bin" />
+    <property name="ant.project.default-target" value="junit" />
+    <property name="ant.project.name" value="test" />
+    <property name="java.version" value="1.8.0_45" />
+    <property name="user.timezone" value="Asia/Shanghai" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="E:\system\Java\jdk1.8.0_45\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="GBK" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="test.xml" value="xml" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="CN" />
+    <property name="java.home" value="E:\system\Java\jdk1.8.0_45\jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="D:\system\project\moor\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="25.45-b02" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="D:\system\apache-ant-1.8.2\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.stdout.encoding" value="ms936" />
+    <property name="user.script" value="" />
+    <property name="user.home" value="C:\Users\Administrator" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.library.path" value="E:\system\Java\jdk1.8.0_45\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\system\apache-maven-3.2.3\bin;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;D:\android-sdk-windows\tools;D:\android-sdk-windows\platform-tools;D:\android-sdk-windows\platforms;D:\android-sdk-windows\build-tools;E:\system\Java\jdk1.8.0_45\bin;E:\system\Java\jdk1.8.0_45\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\android-sdk-windows\tools;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36;D:\system\apache-maven-3.2.3\bin;D:\system\apache-ant-1.8.2\bin;D:\system\apache-maven-3.2.3\bin;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;D:\android-sdk-windows\tools;D:\android-sdk-windows\platform-tools;D:\android-sdk-windows\platforms;D:\android-sdk-windows\build-tools;E:\system\Java\jdk1.8.0_45\bin;E:\system\Java\jdk1.8.0_45\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36;C:\Users\Administrator\AppData\Roaming\npm;.;;." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -cp .;E:\system\Java\jdk1.8.0_45\lib\dt.jar;E:\system\Java\jdk1.8.0_45\lib\tools.jar" />
+    <property name="java.class.path" value="D:\system\apache-ant-1.8.2\lib\ant-launcher.jar;D:\system\project\moor\.\;E:\system\Java\jdk1.8.0_45\lib\dt.jar;E:\system\Java\jdk1.8.0_45\lib\tools.jar;D:\system\apache-ant-1.8.2\lib\ant-antlr.jar;D:\system\apache-ant-1.8.2\lib\ant-apache-bcel.jar;D:\system\apache-ant-1.8.2\lib\ant-apache-bsf.jar;D:\system\apache-ant-1.8.2\lib\ant-apache-log4j.jar;D:\system\apache-ant-1.8.2\lib\ant-apache-oro.jar;D:\system\apache-ant-1.8.2\lib\ant-apache-regexp.jar;D:\system\apache-ant-1.8.2\lib\ant-apache-resolver.jar;D:\system\apache-ant-1.8.2\lib\ant-apache-xalan2.jar;D:\system\apache-ant-1.8.2\lib\ant-commons-logging.jar;D:\system\apache-ant-1.8.2\lib\ant-commons-net.jar;D:\system\apache-ant-1.8.2\lib\ant-jai.jar;D:\system\apache-ant-1.8.2\lib\ant-javamail.jar;D:\system\apache-ant-1.8.2\lib\ant-jdepend.jar;D:\system\apache-ant-1.8.2\lib\ant-jmf.jar;D:\system\apache-ant-1.8.2\lib\ant-jsch.jar;D:\system\apache-ant-1.8.2\lib\ant-junit.jar;D:\system\apache-ant-1.8.2\lib\ant-junit4.jar;D:\system\apache-ant-1.8.2\lib\ant-launcher.jar;D:\system\apache-ant-1.8.2\lib\ant-netrexx.jar;D:\system\apache-ant-1.8.2\lib\ant-swing.jar;D:\system\apache-ant-1.8.2\lib\ant-testutil.jar;D:\system\apache-ant-1.8.2\lib\ant.jar;D:\system\apache-ant-1.8.2\lib\jakarta-ant-1.4-optional.jar;D:\system\apache-ant-1.8.2\lib\junit-4.12.jar;E:\system\Java\jdk1.8.0_45\lib\tools.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="ant.file.test" value="D:\system\project\moor\build.xml" />
+    <property name="ant.file.type.test" value="file" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="E:\system\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="D:\system\project\moor" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="D:\system\project\moor" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="D:\system\apache-ant-1.8.2\lib\ant.jar" />
+    <property name="file.encoding" value="GBK" />
+    <property name="sun.stderr.encoding" value="ms936" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="junit" />
+  </properties>
+  <error message="org/openqa/selenium/WebDriver" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/openqa/selenium/WebDriver
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.WebDriver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+</error>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

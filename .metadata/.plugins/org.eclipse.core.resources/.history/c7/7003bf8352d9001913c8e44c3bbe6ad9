@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//com/zjmy/sxreader/student/createShuP.py=ISO-8859-1
+encoding//com/zjmy/sxreader/student/stuReadBook.py=UTF-8
+encoding//com/zjmy/sxreader/student/stuReadWrite.py=UTF-8
+encoding//com/zjmy/sxreader/student/stuTestQue.py=UTF-8
+encoding//com/zjmy/sxreader/teacher/readBook.py=utf-8
+encoding//com/zjmy/sxreader/teacher/readWrite.py=utf-8
+encoding//com/zjmy/sxreader/teacher/testQuestion.py=utf-8

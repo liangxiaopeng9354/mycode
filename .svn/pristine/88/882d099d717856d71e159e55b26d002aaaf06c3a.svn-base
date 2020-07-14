@@ -1,0 +1,110 @@
+package com.zjmy.moor.center;
+
+import java.util.regex.Pattern;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+import com.sun.org.apache.xpath.internal.operations.Bool;
+import com.zjmy.moor.gongyong.SelectName;
+import com.zjmy.moor.gongyong.SelectPasswd;
+import com.zjmy.moor.gongyong.SelectNameSuiji;
+
+public class TestLogin {
+  private WebDriver driver;
+  private String baseUrl;
+  private boolean acceptNextAlert = true;
+  private StringBuffer verificationErrors = new StringBuffer();
+
+  @Test
+  public void test123() throws Exception {
+
+    String fileName = "D:/system/test.txt";  
+    SelectName s = new SelectName();
+    List<String> list1=s.readFileByLines(fileName);
+    
+    //SelectNameSuiji s=new SelectNameSuiji();
+    //s.initList(fileName);
+    //List<String> list1=s.getStringOfFile();
+    for (String string : list1) {
+	driver = new FirefoxDriver();
+    baseUrl = "https://edu.bjzjmy.com:5656/index#/";
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	//driver.manage().window().maximize();
+	driver.manage().window().setSize(new Dimension(1680,1050));
+	//登录
+	driver.get(baseUrl + "/index");
+	driver.findElement(By.id("loginBtn")).click();
+	driver.findElement(By.id("username")).clear();
+	driver.findElement(By.id("username")).sendKeys(string);
+	driver.findElement(By.id("password")).clear();
+	driver.findElement(By.id("password")).sendKeys(string.substring(12, 18));
+	driver.findElement(By.xpath(".//*[@id='lable']")).click();
+	//获取滑动按钮开始的位置
+	WebElement begin = driver.findElement(By.xpath(".//*[@id='lable']"));
+	//获取滑动按钮结束的位置
+	new Actions(driver).dragAndDropBy(begin, 215, 0).perform();
+	driver.findElement(By.id("btn_submit")).click();
+	Thread.sleep(2000);
+	boolean b=driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*研讨圈[\\s\\S]*$");
+	//判断
+	if(b) {
+		System.out.println(string+"登录成功");
+	}else {
+		System.err.println(string+"登录失败");
+	}
+	
+	driver.quit();
+    //消息模块
+    }
+    System.out.println(this.getClass().getName()+"用例已经完成！！！");
+  }
+
+  @After
+  public void tearDown() throws Exception {
+    driver.quit();
+    String verificationErrorString = verificationErrors.toString();
+    if (!"".equals(verificationErrorString)) {
+      fail(verificationErrorString);
+    }
+  }
+
+  private boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+
+  private boolean isAlertPresent() {
+    try {
+      driver.switchTo().alert();
+      return true;
+    } catch (NoAlertPresentException e) {
+      return false;
+    }
+  }
+
+  private String closeAlertAndGetItsText() {
+    try {
+      Alert alert = driver.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
+      }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
+    }
+  }
+}

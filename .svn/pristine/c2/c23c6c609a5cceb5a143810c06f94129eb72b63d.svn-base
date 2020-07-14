@@ -1,0 +1,308 @@
+/*
+ * 1.新建课题
+ * 2.老师审核
+ * 3.学生修改课题名称后继续研究
+ * 4.研究完成
+ * 
+ * 
+ */
+
+package com.zjmy.moor.laboratory.project;
+
+import java.util.regex.Pattern;
+import java.io.File;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class TestSelectTeam {
+  private WebDriver driver;
+  private String baseUrl;
+  private boolean acceptNextAlert = true;
+  private StringBuffer verificationErrors = new StringBuffer();
+  
+
+  @Before
+  public void setUp() throws Exception {
+    driver = new FirefoxDriver();
+    baseUrl = "https://edu.bjzjmy.com:5656/index#/";
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    //driver.manage().window().maximize();
+    driver.manage().window().setSize(new Dimension(1080,2160));
+  }
+
+  @Test
+  public void test2222() throws Exception {
+    driver.get(baseUrl + "/index");
+    driver.findElement(By.id("loginBtn")).click();
+    driver.findElement(By.id("username")).clear();
+    driver.findElement(By.id("username")).sendKeys("310107200107203414");
+    driver.findElement(By.id("password")).clear();
+    driver.findElement(By.id("password")).sendKeys("203414");
+    
+    
+    driver.findElement(By.xpath(".//*[@id='lable']")).click();
+    //获取滑动按钮开始的位置
+    WebElement begin = driver.findElement(By.xpath(".//*[@id='lable']"));
+    //获取滑动按钮结束的位置
+    //WebElement end = driver.findElement(By.xpath("html/body/div[1]"));
+    //new Actions(driver).dragAndDrop(begin, end).perform();
+    new Actions(driver).dragAndDropBy(begin, 215, 0).perform();
+    driver.findElement(By.id("btn_submit")).click();
+    //关闭推送资源
+    //driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div/div[1]/a")).click();
+    //开始新的旅程，新建课题
+    driver.findElement(By.linkText("开始新的研究旅程")).click();
+    driver.findElement(By.cssSelector("a.ng-scope.gcjs > div > img")).click();
+    driver.findElement(By.linkText("开始研究")).click();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div/div/div[2]/textarea")).clear();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div/div/div[2]/textarea")).sendKeys("1");
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[2]/div/div[2]/textarea")).click();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[2]/div/div[2]/textarea")).clear();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[2]/div/div[2]/textarea")).sendKeys("2");
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[3]/div/div[2]/textarea")).clear();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[3]/div/div[2]/textarea")).sendKeys("3");
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[4]/div/div[2]/input")).clear();
+    int num1 = new Random().nextInt(100) + 1;
+    int num2 = new Random().nextInt(1000)+1;
+    System.out.println(num1+"--------"+num2);    
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[4]/div/div[2]/input")).sendKeys(num1+"+顾臻彦课题+"+num2+"+TestSelectTeam"+"+new");
+    driver.findElement(By.xpath("(//a[contains(text(),'下一步')])[2]")).click();
+    Thread.sleep(1000);
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[2]/div/div[2]/textarea")).clear();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[2]/div/div[2]/textarea")).sendKeys("测试选择组员");
+    Thread.sleep(1000);
+    //driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[3]/div/div/button")).click();
+    //driver.findElement(By.cssSelector("span.btn")).click();
+   
+    //选择一个组员
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[3]/div/div/button")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath("html/body/v-modal/v-dialog/div/span/input")).click();
+    driver.findElement(By.xpath("html/body/v-modal/v-dialog/div/span/input")).sendKeys("刘邦迪");
+    //点击搜索按钮
+    driver.findElement(By.xpath("html/body/v-modal/v-dialog/div/span/span/button")).click();
+    //选择一个组员
+    driver.findElement(By.xpath("html/body/v-modal/v-dialog/div/div[2]/div[1]/div[6]/span/i")).click();
+    Thread.sleep(2000);
+    //点击确定
+    driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+    //选择第二个组员
+    driver.findElement(By.xpath("html/body/v-modal/v-dialog/div/div[2]/div[2]/div[3]/span/i")).click();
+    Thread.sleep(2000);
+    //点击确定按钮
+    driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+    Thread.sleep(2000);
+    //再次点击确定按钮
+    driver.findElement(By.xpath("html/body/v-modal/v-dialog/div/div[4]/span[2]")).click();
+    Thread.sleep(2000);
+    //添加组员的任务分工
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[3]/div/div[3]/textarea")).click();
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[3]/div/div[3]/textarea")).clear();
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[3]/div/div[3]/textarea")).sendKeys("这是你的工作任务");
+    
+    //删除添加的第二个组员
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[3]/div/div[5]/div/span[2]")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+    Thread.sleep(2000);
+    
+    System.out.println("2134123");
+    
+    
+    
+    //选择一个老师
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[4]/div/div/button")).click();
+    Thread.sleep(1000);
+    driver.findElement(By.xpath("html/body/v-modal/v-dialog/div[2]/div/div/div[3]/div[1]/a/i")).click();
+    Thread.sleep(1000);
+    driver.findElement(By.xpath("html/body/v-modal/v-dialog/button[2]")).click();
+    Thread.sleep(1000);
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[2]/div/div[2]/textarea")).clear();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[2]/div/div[2]/textarea")).sendKeys("312312312");
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[3]/div/div[2]/textarea")).click();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[3]/div/div[2]/textarea")).click();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[3]/div/div[2]/textarea")).clear();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[3]/div/div[2]/textarea")).sendKeys("312312312");
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[4]/div/div[2]/textarea")).click();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[4]/div/div[2]/textarea")).clear();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[4]/div/div[2]/textarea")).sendKeys("31231231232323");
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[5]/div/div[2]/textarea")).click();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[5]/div/div[2]/textarea")).clear();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[5]/div/div[2]/textarea")).sendKeys("22222222222222222222");
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[6]/div/div[2]/textarea")).click();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[6]/div/div[2]/textarea")).clear();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[6]/div/div[2]/textarea")).sendKeys("222222222222");
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[7]/div/div[2]/textarea")).clear();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[7]/div/div[2]/textarea")).sendKeys("22222222222");
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[8]/div/div[2]/textarea")).clear();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[3]/div[8]/div/div[2]/textarea")).sendKeys("2222222222");
+    driver.findElement(By.xpath("(//a[contains(text(),'导师审核')])[2]")).click();
+    Thread.sleep(1000);
+    driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+    
+    Thread.sleep(1000);
+    driver.quit();
+    
+    //导师审核
+    setUp();
+    driver.get(baseUrl + "/index");
+    driver.findElement(By.xpath(".//*[@id='teacher-btn']")).click();
+    driver.findElement(By.id("username")).clear();
+    driver.findElement(By.id("username")).sendKeys("131111199012223047");
+    driver.findElement(By.id("password")).clear();
+    driver.findElement(By.id("password")).sendKeys("123456");
+    driver.findElement(By.xpath(".//*[@id='loginBtn2']")).click();
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div[2]/div/div[2]/div[1]")).click();
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div/div[2]/ol/li[2]/ul/li[3]/p[2]/span/span/i")).click();
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div/div[2]/ol/li[2]/ul/li[3]/div/textarea")).click();
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div/div[2]/ol/li[2]/ul/li[3]/div/textarea")).sendKeys("通过");
+    Thread.sleep(1000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div/div[2]/ol/li[2]/ul/li[3]/div/div[2]/span[1]")).click();
+    
+    Thread.sleep(1000);
+    driver.quit();
+    //学生修改课题
+    setUp();
+    driver.get(baseUrl + "/index");
+    driver.findElement(By.id("loginBtn")).click();
+    driver.findElement(By.id("username")).clear();
+    driver.findElement(By.id("username")).sendKeys("310107200107203414");
+    driver.findElement(By.id("password")).clear();
+    driver.findElement(By.id("password")).sendKeys("203414");
+    
+    WebElement begin1 = driver.findElement(By.xpath(".//*[@id='lable']"));
+    driver.findElement(By.xpath(".//*[@id='lable']")).click();
+    new Actions(driver).dragAndDropBy(begin1, 215, 0).perform();
+    driver.findElement(By.id("btn_submit")).click();
+    
+    //点击继续研究
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div/div[4]/div[1]/div/div[2]/div/div/div[1]/div[2]/button[1]")).click();
+    //点击第一步，确定研究课题
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[2]/div/span")).click();
+    
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[4]/div/div[2]/input")).click();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[4]/div/div[2]/input")).clear();
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[4]/div/div[2]/input")).sendKeys(num1+"+顾臻彦课题+"+num2+"+TestSelectTeam+update");
+    //下一步
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[3]/div/a")).click();
+    Thread.sleep(4000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[4]/div/a")).click();
+    Thread.sleep(4000);
+    //设计需求达到的要求
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[1]/div/div[2]/textarea")).click();
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[1]/div/div[2]/textarea")).sendKeys("333");
+    
+    //影响设计的限制因素 
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[2]/div/div[2]/textarea")).click();
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[2]/div/div[2]/textarea")).sendKeys("333");
+    //收集到的相关信息及所受到的相关启发 
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[3]/div/div[2]/textarea")).click();
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[3]/div/div[2]/textarea")).sendKeys("333");
+/*    
+    WebElement element = driver.findElement(By.name("input193479"));
+    element.sendKeys("D:\\22.txt");*/
+    //影响设计的限制因素 
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[5]/div/div[2]/textarea")).click();
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[5]/div/div[2]/textarea")).sendKeys("444");
+    Thread.sleep(4000);
+    //点击下一步
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[3]/div/a")).click();
+    Thread.sleep(4000);
+    //点击下一步
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[3]/div/a")).click();
+    Thread.sleep(4000);
+    //点击下一步
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[3]/div/a")).click();
+    Thread.sleep(4000);
+    //输入研究结论与反思 (还能输入300字) 不可为空！
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[3]/div/div[2]/textarea")).click();
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[3]/div/div[2]/textarea")).sendKeys("研究结论与反思 (还能输入300字) 不可为空！研究结论与反思 (还能输入300字) 不可为空！研究结论与反思 (还能输入300字) 不可为空！");
+    //致谢 (还能输入36字) 不可为空！
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[4]/div/div[2]/textarea")).click();
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[2]/div[4]/div/div[2]/textarea")).sendKeys("致谢致谢 (还能输入36字) 不可为空！致谢 (还能输入36字) 不可为空！");
+    //点击预览
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div[3]/div/a")).click();
+    //点击完成课题
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[2]/div/div/a")).click();
+    Thread.sleep(1000);
+    //点击确定完成课题
+    driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+    Thread.sleep(4000);
+    System.out.println("完成课题，返回到首页");
+    driver.quit();
+    setUp();
+    driver.get(baseUrl + "/index");
+    driver.findElement(By.id("loginBtn")).click();
+    driver.findElement(By.id("username")).clear();
+    driver.findElement(By.id("username")).sendKeys("310107200107203414");
+    driver.findElement(By.id("password")).clear();
+    driver.findElement(By.id("password")).sendKeys("203414");
+    
+    WebElement begin2 = driver.findElement(By.xpath(".//*[@id='lable']"));
+    driver.findElement(By.xpath(".//*[@id='lable']")).click();
+    new Actions(driver).dragAndDropBy(begin2, 215, 0).perform();
+    driver.findElement(By.id("btn_submit")).click();
+    //点击查看报告
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div/div[4]/div[1]/div/div[2]/div/div/div[1]/div[2]/button[2]")).click();
+    Thread.sleep(3000);
+    //点击课题列表
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[1]/div[2]/a[1]")).click();
+    Thread.sleep(3000);
+    //退出
+  	Actions builder2 = new Actions(driver);
+  	builder2.moveToElement(driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a"))).perform();  
+  	Thread.sleep(1000);
+  	driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a/ul/li[3]")).click();
+  	Thread.sleep(3000);
+  	driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+  	Thread.sleep(1000);
+  	System.out.println(this.getClass().getName()+"用例已经完成！！！");
+  }
+
+  @After
+  public void tearDown() throws Exception {
+    driver.quit();
+    String verificationErrorString = verificationErrors.toString();
+    if (!"".equals(verificationErrorString)) {
+      fail(verificationErrorString);
+    }
+  }
+  private boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+  private boolean isAlertPresent() {
+    try {
+      driver.switchTo().alert();
+      return true;
+    } catch (NoAlertPresentException e) {
+      return false;
+    }
+  }
+
+  private String closeAlertAndGetItsText() {
+    try {
+      Alert alert = driver.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
+      }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+package com.zjmy.moor.gongyong;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Logout {
+	
+	public static void logout() throws InterruptedException {
+		 //ÍË³ö
+		WebDriver driver=new FirefoxDriver();
+	  	Actions builder2 = new Actions(driver);
+	  	builder2.moveToElement(driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a"))).perform();  
+	  	Thread.sleep(1000);
+	  	driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a/ul/li[3]")).click();
+	  	Thread.sleep(1000);
+	  	driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+	  	Thread.sleep(1000);
+	  	driver.quit();
+ 	 
+    }
+    public static void main(String args[]) throws InterruptedException {
+    	logout();
+    }
+}

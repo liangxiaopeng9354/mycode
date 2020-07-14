@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="1" failures="0" finished="true" name="Test Run: 26" tests="1" total_time="Finished in: 14.40 secs."/>
+<test location="C:\Users\14358\eclipse-workspace\sxreader_selenium\com\zjmy\sxreader\teacher\readBook.py" status="error" test="ReadBook.test_read_book" time="">
+<stdout><![CDATA[13810089226 login is successful
+]]></stdout>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "C:\Users\14358\eclipse-workspace\sxreader_selenium\com\zjmy\sxreader\teacher\readBook.py", line 55, in test_read_book
+    a=random.randint(0,1000)
+AttributeError: 'builtin_function_or_method' object has no attribute 'randint'
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="sxreader_selenium readBook.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

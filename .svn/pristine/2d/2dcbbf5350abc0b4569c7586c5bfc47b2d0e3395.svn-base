@@ -1,0 +1,42 @@
+package com.zjmy.moor.gongyong;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.commons.dbutils.*;
+import org.apache.commons.dbutils.handlers.*;
+
+
+public class DelHLD {
+       public static void initDatabase(String sql) throws SQLException, ClassNotFoundException
+       {
+		 Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.10.121/db_moor?useUnicode=true&characterEncoding=UTF-8", "yanfa", "fromyanfa");
+		 QueryRunner runner = new QueryRunner();
+		 int i=runner.update(conn,sql);
+/*		 Map<String, Object> map= runner.query(conn,sql, new MapHandler());  
+		 System.out.println(map.toString()); 
+		  List<Map<String , Object>> list= runner.query(conn,sql, new MapListHandler());  
+	      System.out.println(list);   
+		   Object obj=runner.query(conn,sql, new ScalarHandler());  
+	        int i=Integer.valueOf(obj.toString());  
+	        System.out.println(i);  */
+		 
+		 if (i==1) {
+			 //判断返回值，如果返回值是1，则数据库清除成功
+			 System.out.println("数据库清空成功");
+		 }else {
+			 //否则清空失败
+			 System.err.println("数据库清空失败");
+		 }
+		 DbUtils.closeQuietly(conn);
+       }
+       public static void main(String args[]) throws ClassNotFoundException, SQLException {
+    	 //initDatabase("insert into tn_multiple_intel_result (id,userid,language,logicMath,visualSpace,bodyMovement,music) values (3,1,1,1,1,1,1);");
+    	 initDatabase("delete from tn_multiple_intel_result;");
+    	 //initDatabase("update tn_multiple_intel_result set language='2',visualSpace='2'  where id='1';");
+    	 //initDatabase("select * from tn_multiple_intel_result;");  
+       }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="0" finished="true" name="Test Run: 36" tests="1" total_time="Finished in: 32.84 secs."/>
+<test location="C:\Users\14358\eclipse-workspace\sxreader_selenium\com\zjmy\sxreader\teacher\readWrite.py" status="ok" test="ReadWrite.test_read_write" time="32.84">
+<stdout><![CDATA[0
+13810089226 login is successful
+763
+&#24067;&#32622;&#35835;&#20070;&#20219;&#21153;763
+]]></stdout>
+<stderr/>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="sxreader_selenium readWrite.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

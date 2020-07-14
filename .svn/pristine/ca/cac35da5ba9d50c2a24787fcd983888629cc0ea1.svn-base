@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="0" finished="true" name="Test Run: 38" tests="1" total_time="Finished in: 23.75 secs."/>
+<test location="C:\Users\14358\eclipse-workspace\sxreader_selenium\com\zjmy\sxreader\teacher\testQuestion.py" status="ok" test="TestQuestion.test_question" time="23.74">
+<stdout/>
+<stderr/>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="sxreader_selenium testQuestion.py (1)"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

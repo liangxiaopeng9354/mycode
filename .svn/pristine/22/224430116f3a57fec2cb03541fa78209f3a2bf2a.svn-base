@@ -1,0 +1,13 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Output from TestSelectTeam</title>
+</head>
+<body>
+<pre>98--------706
+2134123
+完成课题，返回到首页
+com.zjmy.moor.laboratory.project.TestSelectTeam用例已经完成！！！
+</pre>
+</body>
+</html>

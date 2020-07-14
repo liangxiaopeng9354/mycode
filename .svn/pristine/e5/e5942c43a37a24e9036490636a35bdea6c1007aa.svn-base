@@ -1,0 +1,122 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: All Tests</title>
+<link rel="stylesheet" type="text/css" title="Style" href="stylesheet.css">
+</head>
+<body onload="open('allclasses-frame.html','classListFrame')">
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>All Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Class</th><th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="Error">
+<td><a href="com/zjmy/moor/center/0_TestCenter.html">TestCenter</a></td><td><a name="test1"></a><a href="com/zjmy/moor/center/0_TestCenter.html#test1">test1</a></td><td>Error</td><td>Element is not clickable at point (1193.1500244140625, 250.06666564941406). Other element would receive the click: &lt;v-modal style="" class="vModal--default ng-scope ng-isolate-scope" onclose="uploadPhotoModal.close()"&gt;&lt;/v-modal&gt;
+Command duration or timeout: 84 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'XJX2NQLANPAMSCN', ip: '192.168.20.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2b295655-7a51-4819-81aa-00b697c789dd<br>
+<br>
+<code>org.openqa.selenium.WebDriverException: Element is not clickable at point (1193.1500244140625, 250.06666564941406). Other element would receive the click: &lt;v-modal style="" class="vModal--default ng-scope ng-isolate-scope" onclose="uploadPhotoModal.close()"&gt;&lt;/v-modal&gt;<br>Command duration or timeout: 84 milliseconds<br>Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'<br>System info: host: 'XJX2NQLANPAMSCN', ip: '192.168.20.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'<br>Driver info: org.openqa.selenium.firefox.FirefoxDriver<br>Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br>Session ID: 2b295655-7a51-4819-81aa-00b697c789dd<br>	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)<br>	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br>	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br>	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)<br>	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)<br>	at com.zjmy.moor.center.TestCenter.test1(Unknown Source)<br>
+</code></td><td>33.342</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a href="com/zjmy/moor/center/1_TestGuanxin.html">TestGuanxin</a></td><td><a name="test123"></a><a href="com/zjmy/moor/center/1_TestGuanxin.html#test123">test123</a></td><td>Failure</td><td>java.lang.AssertionError<br>
+<br>
+<code>junit.framework.AssertionFailedError: java.lang.AssertionError<br>	at com.zjmy.moor.center.TestGuanxin.tearDown(Unknown Source)<br>
+</code></td><td>56.352</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a href="com/zjmy/moor/center/2_TestInterest.html">TestInterest</a></td><td><a name="test1"></a><a href="com/zjmy/moor/center/2_TestInterest.html#test1">test1</a></td><td>Error</td><td>No suitable driver found for jdbc:mysql://192.168.10.121/db_moor?useUnicode=true&amp;characterEncoding=UTF-8<br>
+<br>
+<code>java.sql.SQLException: No suitable driver found for jdbc:mysql://192.168.10.121/db_moor?useUnicode=true&amp;characterEncoding=UTF-8<br>	at java.sql.DriverManager.getConnection(DriverManager.java:689)<br>	at java.sql.DriverManager.getConnection(DriverManager.java:247)<br>	at com.zjmy.moor.gongyong.DelHLD.initDatabase(Unknown Source)<br>	at com.zjmy.moor.center.TestInterest.test1(Unknown Source)<br>
+</code></td><td>6.974</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/zjmy/moor/center/3_TestMyShoucang.html">TestMyShoucang</a></td><td><a name="test1"></a><a href="com/zjmy/moor/center/3_TestMyShoucang.html#test1">test1</a></td><td>Success</td><td></td><td>33.587</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/zjmy/moor/center/4_TestNewNote.html">TestNewNote</a></td><td><a name="test1"></a><a href="com/zjmy/moor/center/4_TestNewNote.html#test1">test1</a></td><td>Success</td><td></td><td>47.664</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/zjmy/moor/center/5_TestNews.html">TestNews</a></td><td><a name="test123"></a><a href="com/zjmy/moor/center/5_TestNews.html#test123">test123</a></td><td>Success</td><td></td><td>17.980</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/zjmy/moor/center/6_TestQuestion.html">TestQuestion</a></td><td><a name="test1"></a><a href="com/zjmy/moor/center/6_TestQuestion.html#test1">test1</a></td><td>Success</td><td></td><td>25.222</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/zjmy/moor/center/7_TestZhitonggongju.html">TestZhitonggongju</a></td><td><a name="test1"></a><a href="com/zjmy/moor/center/7_TestZhitonggongju.html#test1">test1</a></td><td>Success</td><td></td><td>22.475</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/zjmy/moor/laboratory/project/8_TestGenghuan.html">TestGenghuan</a></td><td><a name="test2222"></a><a href="com/zjmy/moor/laboratory/project/8_TestGenghuan.html#test2222">test2222</a></td><td>Success</td><td></td><td>81.567</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a href="com/zjmy/moor/laboratory/project/9_TestNewProject.html">TestNewProject</a></td><td><a name="test2222"></a><a href="com/zjmy/moor/laboratory/project/9_TestNewProject.html#test2222">test2222</a></td><td>Error</td><td>Unable to locate element: {"method":"xpath","selector":".//*[@id='app-body']/div/ng-view/div[4]/div/div[2]/div/div/a"}
+Command duration or timeout: 30.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'XJX2NQLANPAMSCN', ip: '192.168.20.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 23a91a48-d90c-4793-be4a-50f0672b044b
+*** Element info: {Using=xpath, value=.//*[@id='app-body']/div/ng-view/div[4]/div/div[2]/div/div/a}<br>
+<br>
+<code>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='app-body']/div/ng-view/div[4]/div/div[2]/div/div/a"}<br>Command duration or timeout: 30.08 seconds<br>For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'<br>System info: host: 'XJX2NQLANPAMSCN', ip: '192.168.20.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'<br>Driver info: org.openqa.selenium.firefox.FirefoxDriver<br>Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br>Session ID: 23a91a48-d90c-4793-be4a-50f0672b044b<br>*** Element info: {Using=xpath, value=.//*[@id='app-body']/div/ng-view/div[4]/div/div[2]/div/div/a}<br>	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)<br>	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br>	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br>	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br>	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br>	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br>	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br>	at com.zjmy.moor.laboratory.project.TestNewProject.test2222(Unknown Source)<br>Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='app-body']/div/ng-view/div[4]/div/div[2]/div/div/a"}<br>For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'<br>System info: host: 'XJX2NQLANPAMSCN', ip: '192.168.20.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'<br>Driver info: driver.version: unknown<br>	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous6612479966294028198webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)<br>	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous6612479966294028198webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)<br>
+</code></td><td>99.454</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/zjmy/moor/laboratory/project/10_TestSeeProject.html">TestSeeProject</a></td><td><a name="test1"></a><a href="com/zjmy/moor/laboratory/project/10_TestSeeProject.html#test1">test1</a></td><td>Success</td><td></td><td>46.597</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/zjmy/moor/laboratory/project/11_TestSelectTeam.html">TestSelectTeam</a></td><td><a name="test2222"></a><a href="com/zjmy/moor/laboratory/project/11_TestSelectTeam.html#test2222">test2222</a></td><td>Success</td><td></td><td>130.434</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/zjmy/moor/laboratory/project/12_TestUpdateProject.html">TestUpdateProject</a></td><td><a name="test2222"></a><a href="com/zjmy/moor/laboratory/project/12_TestUpdateProject.html#test2222">test2222</a></td><td>Success</td><td></td><td>96.490</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/zjmy/moor/laboratory/project/13_TestYourProject.html">TestYourProject</a></td><td><a name="test1"></a><a href="com/zjmy/moor/laboratory/project/13_TestYourProject.html#test1">test1</a></td><td>Success</td><td></td><td>42.660</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/zjmy/moor/laboratory/project/14_TestZuofei.html">TestZuofei</a></td><td><a name="test2222"></a><a href="com/zjmy/moor/laboratory/project/14_TestZuofei.html#test2222">test2222</a></td><td>Success</td><td></td><td>43.502</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a href="com/zjmy/moor/yanketang/15_TestYanketang.html">TestYanketang</a></td><td><a name="test1233"></a><a href="com/zjmy/moor/yanketang/15_TestYanketang.html#test1233">test1233</a></td><td>Error</td><td>Element is not clickable at point (611.36669921875, 87). Other element would receive the click: &lt;div style="" class="btn-group justified web-app-title ng-scope" ng-if="uProfile.authorities[0] == 'ROLE_Student'"&gt;&lt;/div&gt;
+Command duration or timeout: 68 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'XJX2NQLANPAMSCN', ip: '192.168.20.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4bcc6297-65f8-4dfe-aab9-5d63279fdb86<br>
+<br>
+<code>org.openqa.selenium.WebDriverException: Element is not clickable at point (611.36669921875, 87). Other element would receive the click: &lt;div style="" class="btn-group justified web-app-title ng-scope" ng-if="uProfile.authorities[0] == 'ROLE_Student'"&gt;&lt;/div&gt;<br>Command duration or timeout: 68 milliseconds<br>Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'<br>System info: host: 'XJX2NQLANPAMSCN', ip: '192.168.20.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'<br>Driver info: org.openqa.selenium.firefox.FirefoxDriver<br>Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br>Session ID: 4bcc6297-65f8-4dfe-aab9-5d63279fdb86<br>	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)<br>	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br>	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br>	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)<br>	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)<br>	at com.zjmy.moor.yanketang.TestYanketang.test1233(Unknown Source)<br>
+</code></td><td>20.720</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/zjmy/moor/yantao/16_TestYantaoquan.html">TestYantaoquan</a></td><td><a name="test123"></a><a href="com/zjmy/moor/yantao/16_TestYantaoquan.html#test123">test123</a></td><td>Success</td><td></td><td>68.117</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a href="com/zjmy/moor/yantao/17_TestZiyuan.html">TestZiyuan</a></td><td><a name="test12312"></a><a href="com/zjmy/moor/yantao/17_TestZiyuan.html#test12312">test12312</a></td><td>Error</td><td>Unable to locate element: {"method":"xpath","selector":"html/body/div[2]/div[1]/div/div[2]/div[1]/div[2]/div[2]/div/div/div[1]"}
+Command duration or timeout: 30.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'XJX2NQLANPAMSCN', ip: '192.168.20.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 09b513b1-4af2-4558-9d10-cbd20c4e80e1
+*** Element info: {Using=xpath, value=html/body/div[2]/div[1]/div/div[2]/div[1]/div[2]/div[2]/div/div/div[1]}<br>
+<br>
+<code>org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"html/body/div[2]/div[1]/div/div[2]/div[1]/div[2]/div[2]/div/div/div[1]"}<br>Command duration or timeout: 30.05 seconds<br>For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'<br>System info: host: 'XJX2NQLANPAMSCN', ip: '192.168.20.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'<br>Driver info: org.openqa.selenium.firefox.FirefoxDriver<br>Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=33.0.3, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br>Session ID: 09b513b1-4af2-4558-9d10-cbd20c4e80e1<br>*** Element info: {Using=xpath, value=html/body/div[2]/div[1]/div/div[2]/div[1]/div[2]/div[2]/div/div/div[1]}<br>	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)<br>	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br>	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br>	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br>	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br>	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br>	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br>	at com.zjmy.moor.yantao.TestZiyuan.test12312(Unknown Source)<br>Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"html/body/div[2]/div[1]/div/div[2]/div[1]/div[2]/div[2]/div/div/div[1]"}<br>For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'<br>System info: host: 'XJX2NQLANPAMSCN', ip: '192.168.20.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_45'<br>Driver info: driver.version: unknown<br>	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous4535314546217074374webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)<br>	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous4535314546217074374webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)<br>
+</code></td><td>52.876</td>
+</tr>
+</table>
+</body>
+</html>

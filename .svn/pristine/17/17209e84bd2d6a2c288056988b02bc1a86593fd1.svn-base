@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="XJX2NQLANPAMSCN" name="com.zjmy.moor.center.TestQuestion" tests="1" time="25.225" timestamp="2017-10-23T06:14:12">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="lib.dir" value="lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Windows 7" />
+    <property name="sun.boot.class.path" value="E:\system\Java\jdk1.8.0_45\jre\lib\resources.jar;E:\system\Java\jdk1.8.0_45\jre\lib\rt.jar;E:\system\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;E:\system\Java\jdk1.8.0_45\jre\lib\jsse.jar;E:\system\Java\jdk1.8.0_45\jre\lib\jce.jar;E:\system\Java\jdk1.8.0_45\jre\lib\charsets.jar;E:\system\Java\jdk1.8.0_45\jre\lib\jfr.jar;E:\system\Java\jdk1.8.0_45\jre\classes" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="D:\system\apache-ant-1.8.2" />
+    <property name="java.runtime.version" value="1.8.0_45-b15" />
+    <property name="user.name" value="Administrator" />
+    <property name="build.dir" value="classes" />
+    <property name="report.xml" value="report/xml" />
+    <property name="user.language" value="zh" />
+    <property name="sun.boot.library.path" value="E:\system\Java\jdk1.8.0_45\jre\bin" />
+    <property name="ant.project.default-target" value="junit" />
+    <property name="ant.project.name" value="TestJunit" />
+    <property name="java.version" value="1.8.0_45" />
+    <property name="user.timezone" value="Asia/Shanghai" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="E:\system\Java\jdk1.8.0_45\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="GBK" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="ant.file.TestJunit" value="D:\system\project\selenium-moor\moor\build.xml" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="CN" />
+    <property name="java.home" value="E:\system\Java\jdk1.8.0_45\jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="D:\system\project\selenium-moor\moor\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="25.45-b02" />
+    <property name="report.dir" value="report" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="D:\system\apache-ant-1.8.2\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.stdout.encoding" value="ms936" />
+    <property name="user.script" value="" />
+    <property name="ant.file.type.TestJunit" value="file" />
+    <property name="user.home" value="C:\Users\Administrator" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="test" />
+    <property name="java.library.path" value="E:\system\Java\jdk1.8.0_45\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\system\apache-maven-3.2.3\bin;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;D:\android-sdk-windows\tools;D:\android-sdk-windows\platform-tools;D:\android-sdk-windows\platforms;D:\android-sdk-windows\build-tools;E:\system\Java\jdk1.8.0_45\bin;E:\system\Java\jdk1.8.0_45\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\android-sdk-windows\tools;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36;D:\system\apache-maven-3.2.3\bin;D:\system\apache-ant-1.8.2\bin;D:\system\apache-maven-3.2.3\bin;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts;D:\android-sdk-windows\tools;D:\android-sdk-windows\platform-tools;D:\android-sdk-windows\platforms;D:\android-sdk-windows\build-tools;E:\system\Java\jdk1.8.0_45\bin;E:\system\Java\jdk1.8.0_45\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\Programs\Fiddler;.;;.;;.;;." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=D:\system\project\selenium-moor\moor\junittestcases5076309043462066000.properties filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\system\project\selenium-moor\moor\report\xml\IGNORETHIS.xml crashfile=D:\system\project\selenium-moor\moor\junitvmwatcher5907794024047922381.properties propsfile=D:\system\project\selenium-moor\moor\junit873446849724385930.properties" />
+    <property name="java.class.path" value="D:\system\project\selenium-moor\moor\lib\apache-mime4j-0.6.jar;D:\system\project\selenium-moor\moor\lib\bsh-2.0b4.jar;D:\system\project\selenium-moor\moor\lib\cglib-nodep-2.1_3.jar;D:\system\project\selenium-moor\moor\lib\commons-codec-1.10.jar;D:\system\project\selenium-moor\moor\lib\commons-exec-1.3.jar;D:\system\project\selenium-moor\moor\lib\commons-io-2.4.jar;D:\system\project\selenium-moor\moor\lib\commons-logging-1.2.jar;D:\system\project\selenium-moor\moor\lib\gson-2.3.1.jar;D:\system\project\selenium-moor\moor\lib\guava-19.0.jar;D:\system\project\selenium-moor\moor\lib\hamcrest-core-1.3.jar;D:\system\project\selenium-moor\moor\lib\hamcrest-library-1.3.jar;D:\system\project\selenium-moor\moor\lib\httpclient-4.5.1.jar;D:\system\project\selenium-moor\moor\lib\httpcore-4.4.3.jar;D:\system\project\selenium-moor\moor\lib\httpmime-4.5.jar;D:\system\project\selenium-moor\moor\lib\jcommander-1.48.jar;D:\system\project\selenium-moor\moor\lib\jna-4.1.0.jar;D:\system\project\selenium-moor\moor\lib\jna-platform-4.1.0.jar;D:\system\project\selenium-moor\moor\lib\junit-4.12.jar;D:\system\project\selenium-moor\moor\lib\netty-3.5.7.Final.jar;D:\system\project\selenium-moor\moor\lib\phantomjsdriver-1.2.1.jar;D:\system\project\selenium-moor\moor\lib\selenium-java-2.53.0.jar;D:\system\project\selenium-moor\moor\lib\selenium-java-2.53.0-srcs.jar;D:\system\project\selenium-moor\moor\lib\testng-6.9.9.jar;D:\system\project\selenium-moor\moor\classes;D:\system\project\selenium-moor\moor;E:\system\Java\jdk1.8.0_45\lib\dt.jar;E:\system\Java\jdk1.8.0_45\lib\tools.jar;D:\system\apache-ant-1.8.2\lib\junit-4.12.jar;D:\system\apache-ant-1.8.2\lib\ant-launcher.jar;D:\system\apache-ant-1.8.2\lib\ant.jar;D:\system\apache-ant-1.8.2\lib\ant-junit.jar;D:\system\apache-ant-1.8.2\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="report.html" value="report/html" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="E:\system\Java\jdk1.8.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="D:\system\project\selenium-moor\moor" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="D:\system\project\selenium-moor\moor" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="D:\system\apache-ant-1.8.2\lib\ant.jar" />
+    <property name="file.encoding" value="GBK" />
+    <property name="sun.stderr.encoding" value="ms936" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="src.dir" value="src" />
+    <property name="ant.project.invoked-targets" value="junit" />
+  </properties>
+  <testcase classname="com.zjmy.moor.center.TestQuestion" name="test1" time="25.222" />
+  <system-out><![CDATA[成功进入我的收藏
+com.zjmy.moor.center.TestQuestion用例已经完成！！！
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

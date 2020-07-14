@@ -1,0 +1,165 @@
+package com.zjmy.moor.yantao;
+
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class TestYantaoquan {
+  private WebDriver driver;
+  private String baseUrl;
+  private boolean acceptNextAlert = true;
+  private StringBuffer verificationErrors = new StringBuffer();
+
+  @Before
+  public void setUp() throws Exception {
+    driver = new FirefoxDriver();
+    baseUrl = "https://edu.bjzjmy.com:5656/index#/";
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    //driver.manage().window().maximize();
+    driver.manage().window().setSize(new Dimension(1680,1050));
+  }
+
+  @Test
+  public void test123() throws Exception {
+    driver.get(baseUrl + "/index");
+    driver.findElement(By.id("loginBtn")).click();
+    driver.findElement(By.id("username")).clear();
+    driver.findElement(By.id("username")).sendKeys("310107200107203414");
+    driver.findElement(By.id("password")).clear();
+    driver.findElement(By.id("password")).sendKeys("203414");
+    driver.findElement(By.xpath(".//*[@id='lable']")).click();
+    //获取滑动按钮开始的位置
+    WebElement begin = driver.findElement(By.xpath(".//*[@id='lable']"));
+    //获取滑动按钮结束的位置
+    //WebElement end = driver.findElement(By.xpath("html/body/div[1]"));
+    //new Actions(driver).dragAndDrop(begin, end).perform();
+    new Actions(driver).dragAndDropBy(begin, 215, 0).perform();
+    driver.findElement(By.id("btn_submit")).click();
+    //点击查看报告
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div/div[4]/div[1]/div/div[2]/div/div/div[1]/div[2]/button[2]")).click();
+    Thread.sleep(3000);
+    //分享到朋友圈
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[1]/div[1]/div/div[1]")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath("//a[2]/small")).click();
+    //点击查看课题
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[1]/div[2]/a/p[1]")).click();
+    Thread.sleep(1000);
+    //再点击研讨圈返回研讨圈
+    driver.findElement(By.xpath("//a[2]/small")).click();
+    Thread.sleep(1000);
+    //收藏
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[1]/div[2]/div/a[2]/span[1]")).click();
+    Thread.sleep(1000);
+    //取消收藏
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[1]/div[2]/div/a[2]/span[1]")).click();
+    Thread.sleep(1000);
+    //点赞
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[1]/div[2]/div/a[3]/span[1]")).click();
+    Thread.sleep(1000);
+    //取消点赞
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[1]/div[2]/div/a[3]/span[1]")).click();
+    Thread.sleep(3000);
+    //点击评论
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[1]/div[2]/div/a[4]")).click();
+    Thread.sleep(1000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[2]/section/section/div/textarea")).clear();
+    Thread.sleep(1000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[2]/section/section/div/textarea")).sendKeys("123");
+    Thread.sleep(1000);
+    System.out.println("评论了123");
+    //点击发表
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[2]/section/section/div/a")).click();
+    //取消分享
+    Thread.sleep(3000);
+    //点击本市的分享
+    driver.findElement(By.linkText("本市")).click();
+    System.out.println("点击本市的分享~~");
+    Thread.sleep(1000);
+    //点击收藏
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[1]/div[2]/div/a[2]")).click();
+    Thread.sleep(1000);
+    //点击点赞
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[1]/div[2]/div/a[3]")).click();
+    Thread.sleep(2000);
+    //点击评论
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[1]/div[2]/div/a[4]")).click();
+    Thread.sleep(1000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[2]/section/section/div/textarea")).clear();
+    Thread.sleep(1000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[2]/section/section/div/textarea")).sendKeys("456");
+    Thread.sleep(1000);
+    //点击发表
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[2]/section/section/div/a")).click();
+    //删除刚发表的评论
+    Thread.sleep(2000);
+    driver.findElement(By.xpath(".//*[@id='cy_275']")).click();
+    Thread.sleep(2000);
+    //取消分享
+    driver.findElement(By.linkText("取消分享")).click();
+    Thread.sleep(2000);
+    //点击确定
+    driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+    Thread.sleep(2000);
+    //点击我知道了
+    driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+    Thread.sleep(1000);
+    //点击进入个人中心
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[1]/div[1]/a/img")).click();
+    Thread.sleep(1000);
+    try {
+        assertTrue(driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*私信[\\s\\S]*$"));
+      } catch (Error e) {
+        verificationErrors.append(e.toString());
+      }
+    //退出
+  	Actions builder2 = new Actions(driver);
+  	builder2.moveToElement(driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a"))).perform();  
+  	Thread.sleep(1000);
+  	driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a/ul/li[3]")).click();
+  	Thread.sleep(1000);
+  	driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+  	Thread.sleep(1000);
+  	System.out.println(this.getClass().getName()+"用例已经完成！！！");
+  	driver.quit();
+  }
+
+  private boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+
+  private boolean isAlertPresent() {
+    try {
+      driver.switchTo().alert();
+      return true;
+    } catch (NoAlertPresentException e) {
+      return false;
+    }
+  }
+
+  private String closeAlertAndGetItsText() {
+    try {
+      Alert alert = driver.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
+      }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
+    }
+  }
+}

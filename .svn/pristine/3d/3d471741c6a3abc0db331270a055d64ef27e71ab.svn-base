@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="GBK"?>
+<project name="TestJunit" basedir="." default="junit">
+	<!--  定义JUnit报告文件产生的文件路径 -->
+	<property name="report.dir" value="report" />
+	<property name="report.xml" value="report/xml" />
+	<property name="report.html" value="report/html" />
+	<!--编译后的classes文件路径-->
+	<property name="build.dir" value="classes" />
+	<!--test文件路径-->
+	<property name="test.dir" value="test" />
+	<!--src文件路径-->
+	<property name="src.dir" value="src" />
+	<!--jar包文件路径-->
+	<property name="lib.dir" value="lib" />
+	<!--创建需要的文件路径-->
+	<target name="init">
+	    <delete dir="${build.dir}" />
+		<delete dir="${report.dir}" />
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${report.dir}" />
+		<mkdir dir="${report.xml}" />
+		<mkdir dir="${report.html}" />
+	</target>
+	<path id="all_lib">
+			<fileset dir="${lib.dir}">
+				<include name="*.jar" />
+			</fileset>
+		</path>
+	<!--编译src类-->
+	<target name="compilesrc" depends="init">
+		<javac srcdir="${src.dir}" destdir="${build.dir}" encoding="GBK" includeAntRuntime="false">
+		<classpath>
+				<fileset dir="${lib.dir}">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+			</javac>
+	</target>
+	<!--编译test类-->
+	<target name="compiletest" depends="compilesrc">
+		<javac srcdir="${test.dir}" destdir="${build.dir}" encoding="GBK" includeAntRuntime="false">
+			<classpath>
+				<fileset dir="${lib.dir}">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+	<!--运行test类-->
+	<target name="runtest" depends="compiletest">
+		<!--配置需要执行的junit-->
+		<junit fork="true" forkmode="once" printsummary="withOutAndErr" errorproperty="test.error" showoutput="on">
+			<classpath>
+					<!--将lib中使用到的所有包添加到下面-->
+					<pathelement location="lib/apache-mime4j-0.6.jar" />
+					<pathelement location="lib/bsh-2.0b4.jar" />
+					<pathelement location="lib/cglib-nodep-2.1_3.jar" />
+					<pathelement location="lib/commons-codec-1.10.jar" />
+					<pathelement location="lib/commons-exec-1.3.jar" />
+					<pathelement location="lib/commons-io-2.4.jar" />
+					<pathelement location="lib/commons-logging-1.2.jar" />
+					<pathelement location="lib/gson-2.3.1.jar" />
+					<pathelement location="lib/guava-19.0.jar" />
+					<pathelement location="lib/hamcrest-core-1.3.jar" />
+					<pathelement location="lib/hamcrest-library-1.3.jar" />
+					<pathelement location="lib/httpclient-4.5.1.jar" />
+					<pathelement location="lib/httpcore-4.4.3.jar" />
+					<pathelement location="lib/httpmime-4.5.jar" />
+					<pathelement location="lib/jcommander-1.48.jar" />
+					<pathelement location="lib/jna-4.1.0.jar" />
+					<pathelement location="lib/jna-platform-4.1.0.jar" />
+					<pathelement location="lib/junit-4.12.jar" />
+					<pathelement location="lib/netty-3.5.7.Final.jar" />
+					<pathelement location="lib/phantomjsdriver-1.2.1.jar" />
+					<pathelement location="lib/selenium-java-2.53.0.jar" />
+					<pathelement location="lib/selenium-java-2.53.0-srcs.jar" />
+					<pathelement location="lib/testng-6.9.9.jar" />
+				<pathelement path="${build.dir}" />
+			</classpath>
+			<!--将运行结果生成xml文件-->
+			<formatter type="xml" />
+			<sysproperty key="file.encoding" value="GBK" />
+			<batchtest todir="${report.xml}" haltonfailure="no">
+				<fileset dir="${build.dir}">
+					<!--定义要执行测试的class文件：以Test开头的文件，意味着不是Test开头的文件不会被执行测试-->
+					<include name="**/Test*.class" />
+					<include name="**/*Test.class" />
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+	<!--将运行结果生成html文件-->
+	<target name="junit" depends="runtest">
+		<junitreport todir="${report.xml}">
+			<fileset dir="${report.xml}">
+				<include name="*" />
+			</fileset>
+			<report format="frames" todir="${report.html}" />
+		</junitreport>
+	</target>
+</project>

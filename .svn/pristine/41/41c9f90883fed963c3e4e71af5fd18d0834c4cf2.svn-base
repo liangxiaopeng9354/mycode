@@ -1,0 +1,32 @@
+-- VERSION_5
+-- START DISKCACHE_2
+C:\Users\14358\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\sxreader_appium\com.python.pydev.analysis\v2_indexcache
+com.zjmy.sxreader.testAppium2|1555048906758035000|C:\Users\14358\eclipse-workspace\sxreader_appium\com\zjmy\sxreader\testAppium2.py
+com.zjmy.sxreader.testAppium|1555049193291391000|C:\Users\14358\eclipse-workspace\sxreader_appium\com\zjmy\sxreader\testAppium.py
+-- END DISKCACHE
+-- START DICTIONARY
+6
+5=Dttest
+2=com.zjmy.sxreader.testAppium2
+6=Dttest.setUp
+1=C:\Users\14358\eclipse-workspace\sxreader_appium\com\zjmy\sxreader\testAppium2.py
+3=C:\Users\14358\eclipse-workspace\sxreader_appium\com\zjmy\sxreader\testAppium.py
+4=com.zjmy.sxreader.testAppium
+-- END DICTIONARY
+-- START TREE 1
+5
+dtt|2|Dttest!1^13#7*17@Dttest!3^13#7*33@
+fil|2|filename!3^90#5*35@filename!1^70#5*19@
+fp|2|fp!3^91#5*35@fp!1^71#5*19@
+run|2|runner!1^76#5*19@runner!3^96#5*35@
+sui|2|suite!3^83#5*35@suite!1^63#5*19@
+-- END TREE
+-- START TREE 2
+6
+__i|2|__init__!5&3^15#9*34@__init__!5&1^15#9*18@
+alw|1|always_allow!5&3^72#9*34@
+dri|2|driver!6&1^38#9*19@driver!6&3^38#9*35@
+set|2|setUp!5&1^20#9*18@setUp!5&3^20#9*34@
+tea|2|tearDown!5&1^39#9*18@tearDown!5&3^39#9*34@
+tes|2|test_login_success!5&1^43#9*18@test_login_success!5&3^43#9*34@
+-- END TREE

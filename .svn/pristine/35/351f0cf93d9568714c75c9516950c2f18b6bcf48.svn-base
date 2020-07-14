@@ -1,0 +1,48 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
+</head>
+<body onload="open('package-frame.html','classListFrame')">
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Package com.zjmy.moor.center</h3>
+<h2>Classes</h2>
+<p>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Error">
+<td><a title="Display all tests" href="0_TestCenter.html">TestCenter</a></td><td><a title="Display all tests" href="0_TestCenter.html">1</a></td><td><a title="Display only errors" href="0_TestCenter-errors.html">1</a></td><td>0</td><td>33.410</td><td>2017-10-23T06:10:56</td><td>XJX2NQLANPAMSCN</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a title="Display all tests" href="1_TestGuanxin.html">TestGuanxin</a></td><td><a title="Display all tests" href="1_TestGuanxin.html">1</a></td><td><a title="Display only errors" href="1_TestGuanxin-errors.html">1</a></td><td><a title="Display only failures" href="1_TestGuanxin-fails.html">1</a></td><td>56.365</td><td>2017-10-23T06:11:30</td><td>XJX2NQLANPAMSCN</td>
+</tr>
+<tr valign="top" class="Error">
+<td><a title="Display all tests" href="2_TestInterest.html">TestInterest</a></td><td><a title="Display all tests" href="2_TestInterest.html">1</a></td><td><a title="Display only errors" href="2_TestInterest-errors.html">1</a></td><td>0</td><td>6.978</td><td>2017-10-23T06:12:26</td><td>XJX2NQLANPAMSCN</td>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="3_TestMyShoucang.html">TestMyShoucang</a></td><td><a title="Display all tests" href="3_TestMyShoucang.html">1</a></td><td>0</td><td>0</td><td>33.592</td><td>2017-10-23T06:12:33</td><td>XJX2NQLANPAMSCN</td>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="4_TestNewNote.html">TestNewNote</a></td><td><a title="Display all tests" href="4_TestNewNote.html">1</a></td><td>0</td><td>0</td><td>47.667</td><td>2017-10-23T06:13:07</td><td>XJX2NQLANPAMSCN</td>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="5_TestNews.html">TestNews</a></td><td><a title="Display all tests" href="5_TestNews.html">1</a></td><td>0</td><td>0</td><td>17.985</td><td>2017-10-23T06:13:54</td><td>XJX2NQLANPAMSCN</td>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="6_TestQuestion.html">TestQuestion</a></td><td><a title="Display all tests" href="6_TestQuestion.html">1</a></td><td>0</td><td>0</td><td>25.225</td><td>2017-10-23T06:14:12</td><td>XJX2NQLANPAMSCN</td>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="7_TestZhitonggongju.html">TestZhitonggongju</a></td><td><a title="Display all tests" href="7_TestZhitonggongju.html">1</a></td><td>0</td><td>0</td><td>22.478</td><td>2017-10-23T06:14:38</td><td>XJX2NQLANPAMSCN</td>
+</tr>
+</table>
+</p>
+</body>
+</html>

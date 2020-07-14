@@ -1,0 +1,135 @@
+package com.zjmy.moor.center;
+
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class TestGuanxin {
+  private WebDriver driver;
+  private String baseUrl;
+  private boolean acceptNextAlert = true;
+  private StringBuffer verificationErrors = new StringBuffer();
+
+  @Before
+  public void setUp() throws Exception {
+	  //实例化一个火狐浏览器
+    driver = new FirefoxDriver();
+    baseUrl = "https://edu.bjzjmy.com:5656/index#/";
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    driver.manage().window().maximize();
+    //driver.manage().window().setSize(new Dimension(1680,1050));
+  }
+
+  @Test
+  public void test123() throws Exception {
+    driver.get(baseUrl + "/index");
+    driver.findElement(By.id("loginBtn")).click();
+    driver.findElement(By.id("username")).clear();
+    driver.findElement(By.id("username")).sendKeys("310107200107203414");
+    driver.findElement(By.id("password")).clear();
+    driver.findElement(By.id("password")).sendKeys("203414");
+    driver.findElement(By.xpath(".//*[@id='lable']")).click();
+    //获取滑动按钮开始的位置
+    WebElement begin = driver.findElement(By.xpath(".//*[@id='lable']"));
+    //获取滑动按钮结束的位置
+    //WebElement end = driver.findElement(By.xpath("html/body/div[1]"));
+    //new Actions(driver).dragAndDrop(begin, end).perform();
+    new Actions(driver).dragAndDropBy(begin, 215, 0).perform();
+    driver.findElement(By.id("btn_submit")).click();
+    //选择研讨圈
+    driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[1]/div[2]/div/a[2]")).click();
+    //选择本市
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[1]/div[2]/nav/ul/li[2]/a")).click();
+    //点击取消分享按钮分享课题
+    
+    //点击进入个人中心
+    System.out.println(2);
+    Thread.sleep(2000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/section[2]/section[1]/div[1]/a/img")).click();
+    System.out.println(123);
+    Thread.sleep(3000);
+    try {
+        assertTrue(driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*私信[\\s\\S]*$"));
+      } catch (Error e) {
+        verificationErrors.append(e.toString());
+      }
+    //点击关注
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[2]/div[2]/div[1]/div[3]/span[1]")).click();
+    //登录个人中心
+    Actions builder = new Actions(driver);
+	builder.moveToElement(driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a"))).perform();  
+	Thread.sleep(2000);
+	driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a/ul/li[1]")).click();
+    //点击特别关心
+	driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[2]/div[2]/div[2]/div[2]/div/div[1]/a[2]/div")).click();
+	//点击发私信按钮
+	driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div/div/div/div/div/div/div/ul/li[2]/a")).click();
+	//点击私信输入框
+	driver.findElement(By.xpath(".//*[@id='newMessage']")).click();
+	driver.findElement(By.xpath(".//*[@id='newMessage']")).clear();
+	driver.findElement(By.xpath(".//*[@id='newMessage']")).sendKeys("123");
+	//点击发送按钮
+	driver.findElement(By.xpath(".//*[@id='chatRoomDetail']/div/div[3]/button")).click();
+	Thread.sleep(1000);
+	//点击取消关心
+	driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[3]/div/div/div/div/div/div/div/div/ul/li[1]/a")).click();
+	Thread.sleep(1000);	
+    //退出
+  	Actions builder2 = new Actions(driver);
+  	builder2.moveToElement(driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a"))).perform();  
+  	Thread.sleep(1000);
+  	driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a/ul/li[3]")).click();
+  	Thread.sleep(3000);
+  	driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+  	Thread.sleep(1000);
+  	System.out.println(this.getClass().getName()+"用例已经完成！！！");
+  }
+
+  @After
+  public void tearDown() throws Exception {
+    driver.quit();
+    String verificationErrorString = verificationErrors.toString();
+    if (!"".equals(verificationErrorString)) {
+      fail(verificationErrorString);
+    }
+  }
+
+  private boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+
+  private boolean isAlertPresent() {
+    try {
+      driver.switchTo().alert();
+      return true;
+    } catch (NoAlertPresentException e) {
+      return false;
+    }
+  }
+
+  private String closeAlertAndGetItsText() {
+    try {
+      Alert alert = driver.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
+      }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
+    }
+  }
+}

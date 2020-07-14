@@ -1,0 +1,144 @@
+package com.zjmy.moor.yanketang;
+
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class TestYanketang {
+  private WebDriver driver;
+  private String baseUrl;
+  private boolean acceptNextAlert = true;
+  private StringBuffer verificationErrors = new StringBuffer();
+
+  @Before
+  public void setUp() throws Exception {
+    driver = new FirefoxDriver();
+    baseUrl = "https://edu.bjzjmy.com:5656/index#/";
+    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    //driver.manage().window().maximize();
+    driver.manage().window().setSize(new Dimension(2050,2680));
+  }
+
+  @Test
+  public void test1233() throws Exception {
+	 
+	//登录
+	driver.get(baseUrl + "/index");
+	driver.findElement(By.id("loginBtn")).click();
+	driver.findElement(By.id("username")).clear();
+	driver.findElement(By.id("username")).sendKeys("310107200107203414");
+	driver.findElement(By.id("password")).clear();
+	driver.findElement(By.id("password")).sendKeys("203414");
+	driver.findElement(By.xpath(".//*[@id='lable']")).click();
+	//获取滑动按钮开始的位置
+	WebElement begin = driver.findElement(By.xpath(".//*[@id='lable']"));
+	//获取滑动按钮结束的位置
+	//WebElement end = driver.findElement(By.xpath("html/body/div[1]"));
+	//new Actions(driver).dragAndDrop(begin, end).perform();
+	new Actions(driver).dragAndDropBy(begin, 215, 0).perform();
+	driver.findElement(By.id("btn_submit")).click();
+	//点击研课堂这个
+	driver.findElement(By.xpath("//a[3]/small")).click();
+	Thread.sleep(2000);
+    driver.findElement(By.xpath("(//input[@type='text'])[4]")).clear();
+    driver.findElement(By.xpath("(//input[@type='text'])[4]")).sendKeys("生长");
+    driver.findElement(By.xpath("//div[@id='app-body']/div/ng-view/div[4]/div/div/div[2]/div/span/button")).click();
+    Thread.sleep(2000);
+    //选择点击一个文库
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[2]/div[1]/div/div")).click();
+    Thread.sleep(2000);
+    //点击微课专区
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[1]/div[2]/nav/ul/li[2]/a/span")).click();
+    Thread.sleep(2000);
+    //点击一个微课
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[2]/div[2]/div[1]")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[3]/div[8]/div[1]")).click();
+    Thread.sleep(2000);
+    //点击中国之最
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[1]/div[2]/nav/ul/li[3]/a")).click();
+    Thread.sleep(2000);
+    //driver.findElement(By.linkText("历史人文类")).click();
+    //Thread.sleep(2000);
+    driver.findElement(By.linkText("科技工程类")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[2]/div[1]/div[1]")).click();
+    Thread.sleep(2000);
+    //点击播放视频
+    Thread.sleep(2000);
+    //点击校本资源
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[1]/div[2]/nav/ul/li[4]/a")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[2]/div[1]/div/div/div[1]")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[2]/div[2]/div/div/div[1]")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[2]/div[3]/div/div/div[1]")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[1]/div[2]/div/input")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[1]/div[2]/div/input")).clear();
+    Thread.sleep(2000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[1]/div[2]/div/input")).sendKeys("123");
+    Thread.sleep(2000);
+    driver.findElement(By.xpath(".//*[@id='app-body']/div/ng-view/div[4]/div/div[1]/div[2]/div/span/button")).click();
+    Thread.sleep(2000);
+    //退出
+  	Actions builder2 = new Actions(driver);
+  	builder2.moveToElement(driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a"))).perform();  
+  	Thread.sleep(1000);
+  	driver.findElement(By.xpath("html/body/div[2]/div[2]/div[1]/div/div[2]/a/ul/li[3]")).click();
+  	Thread.sleep(3000);
+  	driver.findElement(By.xpath("html/body/div[5]/div[7]/div/button")).click();
+  	Thread.sleep(1000);
+  	System.out.println(this.getClass().getName()+"用例已经完成！！！");
+  }
+
+  @After
+  public void tearDown() throws Exception {
+    driver.quit();
+    String verificationErrorString = verificationErrors.toString();
+    if (!"".equals(verificationErrorString)) {
+      fail(verificationErrorString);
+    }
+  }
+
+  private boolean isElementPresent(By by) {
+    try {
+      driver.findElement(by);
+      return true;
+    } catch (NoSuchElementException e) {
+      return false;
+    }
+  }
+
+  private boolean isAlertPresent() {
+    try {
+      driver.switchTo().alert();
+      return true;
+    } catch (NoAlertPresentException e) {
+      return false;
+    }
+  }
+
+  private String closeAlertAndGetItsText() {
+    try {
+      Alert alert = driver.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
+      }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
+    }
+  }
+}

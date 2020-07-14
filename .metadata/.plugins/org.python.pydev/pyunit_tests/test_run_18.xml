@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="1" failures="0" finished="true" name="Test Run: 40" tests="1" total_time="Finished in: 29.97 secs."/>
+<test location="C:\Users\14358\eclipse-workspace\sxreader_selenium\com\zjmy\sxreader\student\StuHomeWork.py" status="error" test="sxreader_com.test_1" time="">
+<stdout><![CDATA[993288
+13366993288 login is successful
+]]></stdout>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "C:\Users\14358\eclipse-workspace\sxreader_selenium\com\zjmy\sxreader\student\StuHomeWork.py", line 59, in test_1
+    driver.find_elements_by_link_text("&#26377;&#39064;&#20219;&#21153;").click()
+AttributeError: 'list' object has no attribute 'click'
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="sxreader_selenium StuHomeWork.py (3)"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="git://gitserver/liangxiaopeng/selenium-moor.git"/>
+		<item value="ssh://git@gitserver/liangxiaopeng/selenium-moor.git"/>
+		<item value="git@gitserver:liangxiaopeng/selenium-moor.git"/>
+		<item value="git@192.168.1.240:liangxiaopeng/selenium-moor.git"/>
+		<item value="liangxiaopeng@192.168.1.240:liangxiaopeng/selenium-moor.git"/>
+		<item value="http://gitserver/liangxiaopeng/selenium-moor.git"/>
+		<item value="http://192.168.1.240/liangxiaopeng/selenium-moor.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+		<item value="git.eclipse.org"/>
+		<item value="192.168.1.240"/>
+	</list>
+	<section name="GitImportWizard">
+	</section>
+</section>

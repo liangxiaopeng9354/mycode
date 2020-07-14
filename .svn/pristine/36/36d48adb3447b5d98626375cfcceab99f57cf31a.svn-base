@@ -1,0 +1,10 @@
+git stash 
+git checkout develop
+git pull
+git checkout local
+git rebase develop
+git checkout develop
+git merge local
+git push origin develop
+git checkout local
+git stash pop

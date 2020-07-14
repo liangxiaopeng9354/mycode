@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="87d815ff-06ca-44e6-9e3b-7b25668dda81" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="eclipse-workspace" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/selenium-moor" />
+  </component>
+  <component name="ProjectId" id="1cYqXp45zJkal3gjAGpZyTVKjxG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sxreader_appium_keys/com/zjmy/util" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])" module-name="eclipse-workspace" is-module-sdk="true">
+        <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])" />
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="eclipse-workspace" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\system\eclipse-workspace\sxreader_appium\com\zjmy\config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\system\eclipse-workspace\sxreader_appium_keys\com\zjmy\util" />
+      <recent name="D:\system\eclipse-workspace" />
+      <recent name="D:\system\eclipse-workspace\sxreader_appium_keys\com\zjmy" />
+      <recent name="D:\system\eclipse-workspace\sxreader_appium\com\zjmy\case" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.case_99_cheng">
+    <configuration name="case_99_cheng" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="eclipse-workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sxreader_appium/com/zjmy/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sxreader_appium/com/zjmy/case/case_99_cheng.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="eclipse-workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sxreader_appium_keys/com/zjmy/keywords" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sxreader_appium_keys/com/zjmy/keywords/get_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="port" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="eclipse-workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sxreader_appium/com/zjmy/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sxreader_appium/com/zjmy/util/port.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="eclipse-workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sxreader_appium_keywords/com/zjmy/keywords" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sxreader_appium_keywords/com/zjmy/keywords/run_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="eclipse-workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sxreader_appium_keys/com/zjmy/keywords" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sxreader_appium_keys/com/zjmy/keywords/run_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_case" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="eclipse-workspace" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sxreader_appium/com/zjmy/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sxreader_appium/com/zjmy/case/test_case.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.case_99_cheng" />
+      <item itemvalue="Python.get_data" />
+      <item itemvalue="Python.port" />
+      <item itemvalue="Python.run_main (1)" />
+      <item itemvalue="Python.run_main" />
+      <item itemvalue="Python.test_case" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.case_99_cheng" />
+        <item itemvalue="Python.run_main" />
+        <item itemvalue="Python.test_case" />
+        <item itemvalue="Python.run_main (1)" />
+        <item itemvalue="Python.get_data" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\lxp\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87d815ff-06ca-44e6-9e3b-7b25668dda81" name="Default Changelist" comment="" />
+      <created>1590715916534</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590715916534</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2252" y="116" key="#Notifications" timestamp="1591781175441">
+      <screen x="1920" y="35" width="1680" height="1010" />
+    </state>
+    <state x="2252" y="116" key="#Notifications/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591781175441" />
+    <state x="623" y="69" key="#Unittests_in_test_case.py" timestamp="1592143809792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="69" key="#Unittests_in_test_case.py/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1592143809792" />
+    <state x="414" y="168" width="1092" height="856" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592576280430">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="168" width="1092" height="856" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1592576280430" />
+    <state x="2282" y="189" width="1092" height="856" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591783559617" />
+    <state x="690" y="232" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1592144326668">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="232" key="#com.intellij.ide.macro.MacrosDialog/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1592144326668" />
+    <state x="2427" y="229" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591773962301">
+      <screen x="1920" y="35" width="1680" height="1010" />
+    </state>
+    <state x="2427" y="229" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591773962301" />
+    <state x="2423" y="87" key="#dos_cmd" timestamp="1591766220996">
+      <screen x="1920" y="35" width="1680" height="1010" />
+    </state>
+    <state x="2423" y="87" key="#dos_cmd/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591766220996" />
+    <state x="2423" y="87" key="#port" timestamp="1591774769429">
+      <screen x="1920" y="35" width="1680" height="1010" />
+    </state>
+    <state x="2423" y="87" key="#port/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591774769429" />
+    <state x="623" y="67" key="#read_ini" timestamp="1591107901679">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="67" key="#read_ini/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1591107901679" />
+    <state x="2012" y="127" width="1496" height="826" key="DiffContextDialog" timestamp="1591774405102">
+      <screen x="1920" y="35" width="1680" height="1010" />
+    </state>
+    <state x="2012" y="127" width="1496" height="826" key="DiffContextDialog/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591774405102" />
+    <state x="141" y="254" key="EnvironmentVariablesDialog" timestamp="1591950086249">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="141" y="254" key="EnvironmentVariablesDialog/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1591950086249" />
+    <state x="2043" y="282" key="EnvironmentVariablesDialog/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591790518140" />
+    <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1592144320120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="218" key="FileChooserDialogImpl/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1592144320120" />
+    <state x="2524" y="247" key="FileChooserDialogImpl/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591768241981" />
+    <state width="1894" height="360" key="GridCell.Tab.0.bottom" timestamp="1594301337037">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1894" height="360" key="GridCell.Tab.0.bottom/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1594301337037" />
+    <state width="1654" height="389" key="GridCell.Tab.0.bottom/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591791541787" />
+    <state width="1894" height="360" key="GridCell.Tab.0.center" timestamp="1594301337037">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1894" height="360" key="GridCell.Tab.0.center/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1594301337037" />
+    <state width="1654" height="389" key="GridCell.Tab.0.center/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591791541785" />
+    <state width="1894" height="360" key="GridCell.Tab.0.left" timestamp="1594301337037">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1894" height="360" key="GridCell.Tab.0.left/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1594301337037" />
+    <state width="1654" height="389" key="GridCell.Tab.0.left/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591791541785" />
+    <state width="1894" height="360" key="GridCell.Tab.0.right" timestamp="1594301337037">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1894" height="360" key="GridCell.Tab.0.right/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1594301337037" />
+    <state width="1654" height="389" key="GridCell.Tab.0.right/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591791541787" />
+    <state width="1894" height="452" key="GridCell.Tab.1.bottom" timestamp="1593323630916">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1894" height="452" key="GridCell.Tab.1.bottom/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1593323630916" />
+    <state width="1654" height="435" key="GridCell.Tab.1.bottom/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591783670199" />
+    <state width="1894" height="452" key="GridCell.Tab.1.center" timestamp="1593323630916">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1894" height="452" key="GridCell.Tab.1.center/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1593323630916" />
+    <state width="1654" height="435" key="GridCell.Tab.1.center/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591783670199" />
+    <state width="1894" height="452" key="GridCell.Tab.1.left" timestamp="1593323630916">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1894" height="452" key="GridCell.Tab.1.left/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1593323630916" />
+    <state width="1654" height="435" key="GridCell.Tab.1.left/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591783670199" />
+    <state width="1894" height="452" key="GridCell.Tab.1.right" timestamp="1593323630916">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1894" height="452" key="GridCell.Tab.1.right/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1593323630916" />
+    <state width="1654" height="435" key="GridCell.Tab.1.right/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591783670199" />
+    <state x="310" y="76" key="SettingsEditor" timestamp="1592144648038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="310" y="76" key="SettingsEditor/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1592144648038" />
+    <state x="2080" y="154" key="SettingsEditor/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591790859294" />
+    <state x="364" y="156" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1591711727866">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="364" y="156" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1591711727866" />
+    <state x="577" y="303" key="com.intellij.ide.util.TipDialog" timestamp="1594707834479">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="303" key="com.intellij.ide.util.TipDialog/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1594707834479" />
+    <state x="2425" y="329" key="com.intellij.ide.util.TipDialog/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591783258854" />
+    <state x="2226" y="215" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1591767631262">
+      <screen x="1920" y="35" width="1680" height="1010" />
+    </state>
+    <state x="2226" y="215" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1920.35.1680.1010/0.0.1920.1040@1920.35.1680.1010" timestamp="1591767631262" />
+    <state x="574" y="29" width="919" height="981" key="find.popup" timestamp="1593765408572">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="574" y="29" width="919" height="981" key="find.popup/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1593765408572" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1593409032627">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.35.1680.1010/0.0.1920.1040@0.0.1920.1040" timestamp="1593409032627" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

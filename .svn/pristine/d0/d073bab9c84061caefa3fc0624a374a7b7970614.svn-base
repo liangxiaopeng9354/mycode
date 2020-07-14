@@ -1,0 +1,12 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Output from TestMyShoucang</title>
+</head>
+<body>
+<pre>成功进入我的个人中心
+成功进入我的个人中心
+com.zjmy.moor.center.TestMyShoucang用例已经完成！！！
+</pre>
+</body>
+</html>
