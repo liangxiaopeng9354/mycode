@@ -1,5 +1,5 @@
 #coding=utf-8
-from sxreader_appium_po.com.zjmy.page.login_page import LoginPage
+from sxreader_appium.com.zjmy.page.login_page import LoginPage
 class LoginHandle:
     def __init__(self,i):
         self.login_page=LoginPage(i)

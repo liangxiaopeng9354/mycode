@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from sxreader_appium_po.com.zjmy.handle.login_handle import LoginHandle
+from sxreader_appium.com.zjmy.handle.login_handle import LoginHandle
 import time
 import os
 from page.login_page import LoginPage
@@ -20,7 +20,7 @@ class LoginBusiness:
         self.login_handle.send_username('208911')
         self.login_handle.send_password('qqqqqqq1')
         self.login_handle.clink_login()
-        user_flag = self.login_handle.get_fail_toast('该账号不存在1')
+        user_flag = self.login_handle.get_fail_toast('该账号不存在')
         if user_flag:
             return True
         else:

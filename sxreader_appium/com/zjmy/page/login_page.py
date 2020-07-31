@@ -1,9 +1,9 @@
 #coding = utf-8
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from sxreader_appium_po.com.zjmy.util.get_by_local import GetByLocal
+from sxreader_appium.com.zjmy.util.get_by_local import GetByLocal
 from time import sleep
-from sxreader_appium_po.com.zjmy.base.base_driver import *
+from sxreader_appium.com.zjmy.base.base_driver import *
 import os
 
 class LoginPage:
